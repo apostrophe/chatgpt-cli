@@ -1,0 +1,21 @@
+# Check if any arguments are provided
+if [ "$#" -eq 0 ]; then
+    echo "No arguments provided. Please provide at least one argument."
+    return 1
+fi
+
+# Display the provided arguments
+echo "===================================="
+echo "          Argument List            "
+echo "===================================="
+for arg in "$@"; do
+    echo " - $arg"
+done
+echo "===================================="
+
+# Call the Python application with the arguments
+python src/callChatGpt.py "$@"
+
+# Summary of arguments
+echo "Total arguments provided: $#"
+

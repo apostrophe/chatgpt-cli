@@ -1,0 +1,7 @@
+
+[x] find a way to not require quotes
+[ ] find a way to call this script from anywhere
+[ ] find a way to call this script
+    [ ] from anywhere
+    [ ] outside of the virtual env
+        [ ] figure out how to install openai via pip
