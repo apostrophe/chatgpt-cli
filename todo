@@ -4,11 +4,13 @@
     -> added `| less -X` to the end of the call to the python script
         drawback: the horizontal line drawn by shutil doesn't work (terminal size isn't available via less)
         
-[ ] find a way to call this script
-    [ ] ...from anywhere
-    [ ] ...outside of virtual env
-        [ ] figure out how to install openai via pip
+[x] find a way to call this script
+    [x] ...from anywhere
+    [x] ...outside of virtual env
+        [x] figure out how to install openai via pip 
+            -> install via pacman (python-openai)
         
 [ ] filter out/escape special charactser
-    [ ] single quotes/apostraphe
+    [x] single quotes/apostraphe
+        -> can't be done -- single quote affects terminal itself, can't be filtered out
     [ ] others? 

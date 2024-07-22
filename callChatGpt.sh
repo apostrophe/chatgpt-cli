@@ -1,11 +1,12 @@
 #!/bin/bash
 
 echo ""
-echo "output will be provided in less -X format, so scroll thorugh output using SPACE, b"
-echo "press q when done (output displayed will remain in the screen)"
+echo "Output will be piped through 'less -X'. Scroll through output using SPACE(forward), b(backward)"
+echo "Press 'q' to return to the command prompt.  The current output will remain on the screen."
 echo ""
 
-# Call the Python application with the arguments
-python src/callChatGpt.py "$*" | less -X
+script_location="/home/bschilke/Documents/development/LLMs/openai/cli-client/chatgpt-virtualenv/"
 
+# Call the Python application with the arguments
+python "${script_location}"src/callChatGpt.py "$*" | less -X
 

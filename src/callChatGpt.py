@@ -28,7 +28,6 @@ def main():
         stream=True,
     )
 
-    #print("---------------------------------------------------------")
     draw_horizontal_line()
     for chunk in stream:
         if chunk.choices[0].delta.content is not None:
@@ -36,7 +35,6 @@ def main():
     
     # make sure there's an extra line in the terminal        
     print()
-    #print("---------------------------------------------------------")
     draw_horizontal_line()
     
 if __name__ == "__main__":
