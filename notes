@@ -19,3 +19,16 @@ python src/callChatGpt.py "$@"
 # Summary of arguments
 echo "Total arguments provided: $#"
 
+
+account: gmail .biz acct
+
+billing: https://platform.openai.com/settings/organization/billing/history (pay as you go)
+pricing: https://openai.com/api/pricing/
+api keys: https://platform.openai.com/api-keys
+usage: https://platform.openai.com/usage
+
+getting started: https://platform.openai.com/docs/api-reference/introduction
+getting started 2: https://platform.openai.com/docs/api-reference/authentication?lang=curl
+
+ui version of chatgpt: https://platform.openai.com/playground/chat?models=gpt-4o
+

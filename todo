@@ -1,7 +1,14 @@
 
 [x] find a way to not require quotes
-[ ] find a way to call this script from anywhere
+[x] find a way to stop scrolling when the response goes beyond the length of the screen?
+    -> added `| less -X` to the end of the call to the python script
+        drawback: the horizontal line drawn by shutil doesn't work (terminal size isn't available via less)
+        
 [ ] find a way to call this script
-    [ ] from anywhere
-    [ ] outside of the virtual env
+    [ ] ...from anywhere
+    [ ] ...outside of virtual env
         [ ] figure out how to install openai via pip
+        
+[ ] filter out/escape special charactser
+    [ ] single quotes/apostraphe
+    [ ] others? 
